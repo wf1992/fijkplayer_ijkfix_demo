@@ -1,0 +1,28 @@
+PODS:
+  - fijkplayer_ijkfix (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - shared_preferences_ios (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - fijkplayer_ijkfix (from `.symlinks/plugins/fijkplayer_ijkfix/ios`)
+  - Flutter (from `Flutter`)
+  - shared_preferences_ios (from `.symlinks/plugins/shared_preferences_ios/ios`)
+
+EXTERNAL SOURCES:
+  fijkplayer_ijkfix:
+    :path: ".symlinks/plugins/fijkplayer_ijkfix/ios"
+  Flutter:
+    :path: Flutter
+  shared_preferences_ios:
+    :path: ".symlinks/plugins/shared_preferences_ios/ios"
+
+SPEC CHECKSUMS:
+  fijkplayer_ijkfix: 85a2935d0a3f695747148c0643f9f8c6f4d10131
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  shared_preferences_ios: 548a61f8053b9b8a49ac19c1ffbc8b92c50d68ad
+
+PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
+
+COCOAPODS: 1.11.2

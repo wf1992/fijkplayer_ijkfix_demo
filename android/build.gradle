@@ -1,0 +1,48 @@
+group 'com.example.fijkplayer'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        flatDir {
+            dirs project(':fijkplayer_ijkfix').file('aars')
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+}
+
+
+dependencies {
+    // 自己生成的aar
+    api(name: 'fijkplayer-full-release', ext: 'aar')
+
+    // fijkplayer-full include the java lib and native shared libs for armv5 armv7 arm64 x86 x86_64
+//    implementation 'com.befovy.fijkplayer:fijkplayer-full:0.7.16'
+    implementation 'androidx.annotation:annotation:1.2.0'
+}
