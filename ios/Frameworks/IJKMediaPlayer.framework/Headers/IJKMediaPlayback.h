@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger, IJKMPMovieTimeOption) {
 #pragma mark IJKMediaPlayback
 
 @protocol IJKMediaPlayback <NSObject>
-
+- (void)resetPlayerUrl:(NSString *)url;
 - (void)prepareToPlay;
 - (void)play;
 - (void)pause;

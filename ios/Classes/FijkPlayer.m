@@ -159,6 +159,12 @@ static int renderType = 0;
     return self;
 }
 
+- (void)resetPlayerUrl:(NSString *)url {
+    if(_ijkMediaPlayer) {
+        [_ijkMediaPlayer resetPlayerUrl:url];
+    }
+}
+
 - (void)setup {
     _ijkMediaPlayer.cacheSnapshot = ([_hostOption getIntValue:FIJK_HOST_OPTION_ENABLE_SNAPSHOT defalt:@(0)] > 0);
 }

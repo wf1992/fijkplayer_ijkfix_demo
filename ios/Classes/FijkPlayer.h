@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
                                   FlutterTexture, IJKCVPBViewProtocol>
 
 @property(atomic, readonly) NSNumber *playerId;
+- (void)resetPlayerUrl:(NSString *)url;
 
 - (instancetype)initWithRegistrar:(id<FlutterPluginRegistrar>)registrar;
 

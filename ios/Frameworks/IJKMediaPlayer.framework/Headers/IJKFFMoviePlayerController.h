@@ -72,6 +72,8 @@ typedef enum IJKLogLevel {
 
 @interface IJKFFMoviePlayerController : NSObject <IJKMediaPlayback>
 
+- (void)resetPlayerUrl:(NSString *)url;
+
 - (id)initWithContentURL:(NSURL *)aUrl
              withOptions:(IJKFFOptions *)options;
 

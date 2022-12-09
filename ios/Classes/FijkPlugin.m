@@ -116,6 +116,12 @@ static FijkPlugin *_instance = nil;
         NSNumber *playerId = fijkplayer.playerId;
         _fijkPlayers[playerId] = fijkplayer;
         result(playerId);
+    } else if ([@"resetPlayerUrl" isEqualToString:call.method]) {
+        NSNumber *playerId = argsMap[@"playerId"];
+        NSLog(@"FLUTTER: %s %@ :~~ %@", "call resetPlayerUrl:", playerId, argsMap[@"url"]);
+        FijkPlayer *fijkplayer = [_fijkPlayers objectForKey:playerId];
+        [fijkplayer resetPlayerUrl: argsMap[@"url"]];
+        result(0);
     } else if ([@"releasePlayer" isEqualToString:call.method]) {
         NSNumber *pid = argsMap[@"pid"];
         FijkPlayer *fijkPlayer = [_fijkPlayers objectForKey:pid];

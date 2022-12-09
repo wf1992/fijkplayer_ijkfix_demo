@@ -19,10 +19,26 @@
  * License along with ijkPlayer; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
+#import "IJKFFMediaPlayer.h"
 
 #import <Foundation/Foundation.h>
 #import "IJKFFOptions.h"
 #import "IJKSDLGLViewProtocol.h"
+
+//#include "IJKMediaPlayback.h"
+//#include "ijkplayer/ijkmeta.h"
+
+//#import "IJKFFMoviePlayerDef.h"
+//#include "ijkplayer/ios/ijkplayer_ios.h"
+
+//#import "IJKMediaPlayer.h"
+////#import "IJKFFMoviePlayerDef.h"
+//#import "IJKMediaPlayback.h"
+//#import "IJKMediaModule.h"
+////#import "IJKSDLGLViewProtocol.h"
+//#import "IJKAudioKit.h"
+//#import "IJKNotificationManager.h"
+//#import "NSString+IJKMedia.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -64,6 +80,8 @@ typedef void(^OnSnapshotBlock) (UIImage* __nullable image , NSError* __nullable 
 
 @property (nonatomic) BOOL ignoreAudioInterrupt;
 @property (nonatomic) BOOL cacheSnapshot;
+
+- (void)resetPlayerUrl:(NSString *)url;
 
 - (instancetype)init;
 - (instancetype)initWithFbo;

@@ -122,6 +122,12 @@ class FijkPlayer extends ChangeNotifier implements ValueListenable<FijkValue> {
     _doNativeSetup();
   }
 
+  /// Felix wang  https://github.com/wf1992
+  /// reset player url
+  Future<int> resetPlayerUrl(String url) async {
+    return await FijkPlugin._resetPlayerUrl(url,_playerId);
+  }
+
   Future<void> _startFromAnyState() async {
     await _nativeSetup.future;
 
