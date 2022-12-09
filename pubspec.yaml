@@ -1,6 +1,6 @@
 name: fijkplayer_ijkfix
 description: A Video Player Flutter plugin based on fijkplayer, support most popular protocols and codecs
-version: 0.0.8
+version: 0.0.9
 homepage: https://github.com/wf1992/fijkplayer_ijkfix.git
 
 environment:

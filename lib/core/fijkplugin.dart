@@ -39,6 +39,8 @@ class FijkPlugin {
 
   /// Felix wang  https://github.com/wf1992
   /// reset player url
+  /// 此方法仅仅是为了防盗使用。在播放中更换相同编解码的url，若需要播放下一个视频等，请扔调用其他方法
+  /// 注意： 最好是相同编解码逻辑的url更换，才用此方法，如果因为编码不同，可能会导致播放错误
   static Future<int> _resetPlayerUrl(String url ,int playerId) async {
     if(playerId == -1) return 0;
     int pid = await _channel.invokeMethod("resetPlayerUrl", <String, dynamic>{'url': url,'playerId': playerId});

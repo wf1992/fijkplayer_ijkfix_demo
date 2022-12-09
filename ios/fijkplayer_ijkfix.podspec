@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'fijkplayer_ijkfix'
-  s.version          = '0.0.3'
+  s.version          = '0.0.9'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC
 A new flutter plugin project.

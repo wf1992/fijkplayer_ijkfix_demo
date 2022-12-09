@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'fijk_video_page.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -21,7 +23,7 @@ class _MyAppState extends State<MyApp> {
         accentColor: Color(0xFFFFC107),
         dividerColor: Color(0xFFBDBDBD),
       ),
-      home: Container(),
+      home: FijkVideoPage(),
     );
   }
 }
