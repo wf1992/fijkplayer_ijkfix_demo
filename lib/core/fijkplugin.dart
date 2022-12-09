@@ -41,8 +41,8 @@ class FijkPlugin {
   /// reset player url
   static Future<int> _resetPlayerUrl(String url ,int playerId) async {
     if(playerId == -1) return 0;
-    int? pid = await _channel.invokeMethod("resetPlayerUrl", <String, dynamic>{'url': url,'playerId': playerId});
-    if (pid != null) {
+    int pid = await _channel.invokeMethod("resetPlayerUrl", <String, dynamic>{'url': url,'playerId': playerId});
+    if (pid == 1) {
       return Future.value(pid);
     }
     FijkLog.e("failed to resetPlayerUrl");
