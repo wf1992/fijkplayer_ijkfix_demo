@@ -1,5 +1,7 @@
 # fijkplayer_ijkfix
-# 请使用0.0.9或者往上的版本，0.0.5也可以
+# 请使用0.0.11或者往上的版本，0.0.9也可以
+0.0.11支持了flutter stable 3.10.6。
+
 0.0.9支持了iOS下的动态更换播放源url的功能。
 
 此项目是依赖于fijkplayer的插件的衍生产物，修复了fijkplayer的不支持wav，s48等音频格式等问题。。
@@ -47,3 +49,18 @@ bash compile-ffmpeg.sh all
 
 
 # 顺便说一句：这个plugin依旧支持fijkplayer_skin。
+
+
+# 发布：
+
+1、检查包：
+
+flutter packages pub publish --dry-run
+
+2、指定服务器发布：
+
+flutter packages pub publish --server=https://pub.dartlang.org
+
+3、普通的发布：
+
+flutter packages pub publish
